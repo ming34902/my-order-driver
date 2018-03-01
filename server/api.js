@@ -1,5 +1,3 @@
-// 可能是我的node版本问题，不用严格模式使用ES6语法会报错
-
 const db = require('./db');
 
 module.exports=function (app) {
@@ -130,9 +128,4 @@ module.exports=function (app) {
   })
 }
 
-
-
 /************** 创建(create) 读取(get) 更新(update) 删除(delete) **************/
-
-
-
