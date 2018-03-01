@@ -28,7 +28,7 @@ module.exports=function (app) {
         driverData=[]
     const getOrderList= new Promise((resolve,reject)=>{
       db.OrderModel.find(
-        {status:"未选派"},
+        //{status:"未选派"},
         // {timestamp:1,},
         //{limit:20},
         function (err,doc) {
@@ -36,13 +36,13 @@ module.exports=function (app) {
             console.log('status find error!')
             reject('reject status 未选派')
           } else {
-              console.log('doc',doc);
+              //console.log('doc',doc);
               if (!doc) {
               orderData = [];
             } else {
               orderData = doc;
             }
-              console.log('server-orderData',orderData);
+              //console.log('server-orderData',orderData);
               resolve(orderData)
           }
         }
