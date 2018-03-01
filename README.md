@@ -2,9 +2,9 @@
 node+express4.0+mongodb+mongoose+vue+axios
 
 #mongodb bin 目录 开启 mongo
->d:
->cd mongodb\bin 
->mongo  
+d:
+cd mongodb\bin 
+mongo  
 
 #server  后端 
 npm install 
