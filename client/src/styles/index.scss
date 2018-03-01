@@ -1,0 +1,136 @@
+@import './element-ui.scss';
+@import './mixin.scss';
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #ecf0f5;
+  overflow: hidden;
+}
+#app{
+  height: 100%;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//vue router transition css
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 0
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+  $aside-color:#b8c7ce;
+  $sd-item-h:44px !important;
+.el-menu li{
+  color:$aside-color;
+}
+.el-submenu__title {
+  color: $aside-color;
+  height: $sd-item-h;
+  line-height: $sd-item-h;
+  font-size: 14px;
+  opacity: .87;
+  padding-left: 17px!important;
+}
+.el-menu-item{
+  height: 50px;
+  width: 146px;
+  line-height: 50px;
+  background-color: #1c2432;
+  font-size: 14px;
+  text-align: center;
+}
+.el-menu--horizontal>.el-menu-item.is-active{
+  color: #0facd5 !important;
+  border-bottom-color: #293447 !important;
+  background-color: rgba(0,18,37,.5) !important;
+  //background-image: url('~assets/image/menuActive.png');
+}
+
+.el-menu-item:hover{
+  background-color:#293447;
+  border-bottom: 3px solid #0facd5 !important;
+}
+.el-submenu__title:hover{
+  background-color:#293447;
+}
+.el-submenu__icon-arrow{
+  left:170px;
+}
+.el-dropdown-menu__item{
+  padding: 0;
+}
+.el-submenu__icon-arrow{
+  right:auto !important;
+}
+.el-submenu{
+  &.is-opened{
+    background-color:#293447;
+  }
+}
+
+.hp-box > div:nth-child(1){
+  width: 100% !important;
+}
+.hp-box > div:nth-child(1) > canvas {
+  width: 100% !important;
+}

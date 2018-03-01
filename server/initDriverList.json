@@ -1,0 +1,29 @@
+[
+  {
+  "driverCode":"540004161",
+  "driverName":"张三",
+  "driverLine":["路线3","路线4"],
+  "driverLevel":2,
+  "driverDes":"备注1",
+  "timestamp":1518399632001 ,
+  "driverOrderCode":""
+  },
+  {
+    "driverCode":"540004162",
+    "driverName":"李四",
+    "driverLine":["路线3","路线5"],
+    "driverLevel":2,
+    "driverDes":"备注2",
+    "timestamp":1518399632002 ,
+    "driverOrderCode":""
+  },
+  {
+    "driverCode":"540004162",
+    "driverName":"王四",
+    "driverLine":["路线2","路线1"],
+    "driverLevel":3,
+    "driverDes":"备注3",
+    "timestamp":1518399632003 ,
+    "driverOrderCode":""
+  }
+]
